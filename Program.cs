@@ -27,11 +27,11 @@ builder.Services.AddSwaggerGen();
 var app = builder.Build(); // יש ליצור את המשתנה כאן
 
 // שימוש ב-Swagger אם מדובר בסביבת פיתוח
-if (app.Environment.IsDevelopment())
-{
+// if (app.Environment.IsDevelopment())
+// {
     app.UseSwagger();
     app.UseSwaggerUI();
-}
+//}
 
 // שימוש במדיניות ה-CORS הפתוחה
 app.UseCors("AllowAll");
