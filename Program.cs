@@ -5,10 +5,10 @@ var builder = WebApplication.CreateBuilder(args);
 
 // הגדרת ה-DbContext
 builder.Services.AddDbContext<ToDoDbContext>(options =>
-    options.UseMySql(
-        builder.Configuration.GetConnectionString("ToDoDB"),
-        Microsoft.EntityFrameworkCore.ServerVersion.Parse("8.0.40-mysql")
-    ));
+    {
+        var connectionString = Environment.GetEnvironmentVariable("ToDoDB");
+            options.UseMySql(connectionString, Microsoft.EntityFrameworkCore.ServerVersion.Parse("8.0.40-mysql"));
+    });
 // הוספת שירותי CORS עם מדיניות פתוחה
 builder.Services.AddCors(options =>
 {
