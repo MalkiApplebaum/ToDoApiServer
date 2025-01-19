@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\This User\\Desktop\\practicod\\ToDoList\\TodoApiServer\\TodoApi.csproj": {}
+    "C:\\Users\\This User\\Desktop\\practicod\\ToDoList\\TodoApiServer\\ToDoApiServer\\TodoApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\This User\\Desktop\\practicod\\ToDoList\\TodoApiServer\\TodoApi.csproj": {
+    "C:\\Users\\This User\\Desktop\\practicod\\ToDoList\\TodoApiServer\\ToDoApiServer\\TodoApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\This User\\Desktop\\practicod\\ToDoList\\TodoApiServer\\TodoApi.csproj",
+        "projectUniqueName": "C:\\Users\\This User\\Desktop\\practicod\\ToDoList\\TodoApiServer\\ToDoApiServer\\TodoApi.csproj",
         "projectName": "TodoApi",
-        "projectPath": "C:\\Users\\This User\\Desktop\\practicod\\ToDoList\\TodoApiServer\\TodoApi.csproj",
+        "projectPath": "C:\\Users\\This User\\Desktop\\practicod\\ToDoList\\TodoApiServer\\ToDoApiServer\\TodoApi.csproj",
         "packagesPath": "C:\\Users\\This User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\This User\\Desktop\\practicod\\ToDoList\\TodoApiServer\\obj\\",
+        "outputPath": "C:\\Users\\This User\\Desktop\\practicod\\ToDoList\\TodoApiServer\\ToDoApiServer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -45,6 +45,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
             "Microsoft.AspNetCore.Cors": {
               "target": "Package",
               "version": "[2.2.0, )"
@@ -72,6 +76,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.6.2, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[7.0.3, )"
             }
           },
           "imports": [
