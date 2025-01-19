@@ -79,6 +79,7 @@ builder.Services.AddAuthentication(options =>
         };
     });
 
+
 var app = builder.Build();
 
 // פונקציה ליצירת טוקן JWT
