@@ -23,9 +23,9 @@ builder.Services.AddCors(options =>
 
 builder.Services.AddDbContext<ToDoDbContext>(options =>
     options.UseMySql(
-        builder.Configuration.GetConnectionString("ToDoDB"),
+        Environment.GetEnvironmentVariable("ToDoDB"),
         Microsoft.EntityFrameworkCore.ServerVersion.Parse("8.0.40-mysql")
-));
+    ));
 
 // added for token 
 JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
