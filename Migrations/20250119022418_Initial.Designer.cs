@@ -12,8 +12,8 @@ using TodoApi;
 namespace TodoApi.Migrations
 {
     [DbContext(typeof(ToDoDbContext))]
-    [Migration("20250119014800_RecreateDatabase")]
-    partial class RecreateDatabase
+    [Migration("20250119022418_Initial")]
+    partial class Initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
